@@ -1,5 +1,8 @@
 ﻿Console.Clear();
-Console.Write("Введите число: ");
-int n = Convert.ToInt32(Console.ReadLine()); // ввод числа
-for (int i = 2 ; i <= n ; i+=2 );
-    Console.Write($"{i} ");
+Console.WriteLine("Введите любое число: "); // ввод числа
+string numberStr = Console.ReadLine() ??""; 
+int number = int.Parse(numberStr); 
+for(int i = 2; i <= number; i = i + 2) 
+{ 
+    Console.Write($"{i}, "); 
+}
